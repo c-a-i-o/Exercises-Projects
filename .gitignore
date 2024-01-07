@@ -1,0 +1,6 @@
+dogs
+.DS_Store
+*.iml
+out
+target
+.idea
