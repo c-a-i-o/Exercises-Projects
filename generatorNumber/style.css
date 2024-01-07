@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: #011a3d;
+}
+.otp-container {
+  background-color: #1a1820;
+  width: min(37.5em, 90%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.5em;
+}
+.otp-title {
+  text-align: center;
+  font-weight: 500;
+  color: #ffffff;
+}
+.otp-button {
+  font-size: 1em;
+  background-color: #e9eef6;
+  display: block;
+  margin: 2em auto;
+  padding: 1em;
+  color: #3933ef;
+  border: none;
+  outline: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.otp-display {
+  font-size: 1em;
+  background-color: #2a292e;
+  color: #ffffff;
+  letter-spacing: 1em;
+  text-align: center;
+  padding: 1em 0;
+}
