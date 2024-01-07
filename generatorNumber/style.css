@@ -6,10 +6,10 @@
   font-family: "Outfit", sans-serif;
 }
 body {
-  background-color: #011a3d;
+  background-color: #3d0101;
 }
 .otp-container {
-  background-color: #1a1820;
+  background-color: #7f0000;
   width: min(37.5em, 90%);
   position: absolute;
   transform: translate(-50%, -50%);
@@ -21,22 +21,22 @@ body {
 .otp-title {
   text-align: center;
   font-weight: 500;
-  color: #ffffff;
+  color: #f18e8e;
 }
 .otp-button {
-  font-size: 1em;
+  font-size: 2em;
   background-color: #e9eef6;
   display: block;
   margin: 2em auto;
   padding: 1em;
-  color: #3933ef;
+  color: #ff1010;
   border: none;
   outline: none;
   border-radius: 0.3em;
   cursor: pointer;
 }
 .otp-display {
-  font-size: 1em;
+  font-size: 1.5em;
   background-color: #2a292e;
   color: #ffffff;
   letter-spacing: 1em;
