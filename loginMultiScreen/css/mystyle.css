@@ -27,6 +27,41 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+
+/*!  */
+:root {
+    --button: linear-gradient(to right, #ff323297, #fc0404);
+    --button-color: #ffffff;
+}
+
+
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--button);
+    color: var(--button-color);
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+
+
+}
+
+
+/*! */
+
+
+
+
+
+
+
+
+
 h3 {
     text-align: center;
     margin-bottom: 40px;
@@ -139,7 +174,7 @@ small {
     margin: 1% auto;
     position: relative;
     display: grid;
-   /*  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  */
+    /*  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  */
 
 }
 
@@ -187,7 +222,7 @@ small {
 
 
 
-.showfinal{
+.showfinal {
 
     color: #777;
     font-size: 150%;
@@ -195,8 +230,8 @@ small {
     height: 360px;
 
     background: linear-gradient(to right, #fbbdbd8f, #ff6868d2);
- 
-    display:grid;
+
+    display: grid;
     align-items: center;
     justify-content: center;
 
@@ -204,16 +239,16 @@ small {
     animation: fadeInScale 2.5s ease-out forwards;
 
 }
- 
+
 
 @keyframes fadeInScale {
     from {
         opacity: 0;
         transform: scale(0.5);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
     }
 }
-
