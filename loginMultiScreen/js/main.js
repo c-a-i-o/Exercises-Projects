@@ -123,7 +123,7 @@ $(document).ready(function () {
 
         var resultContainer = $("<div class='showfinal'></div>");
 
-          // Adicionar as informações do objeto result ao elemento div
+          // Add the result object information to the div element
         resultContainer.append("<h4>Instagram: " + result.instagramInput + "</h4>");
         resultContainer.append("<h4>Github: " + result.githubInput + "</h4>");
         resultContainer.append("<h4>Twitter: " + result.twitterInput + "</h4>");
@@ -132,7 +132,7 @@ $(document).ready(function () {
         resultContainer.append("<h4>Phone: " + result.phoneInput + "</h4>");
 
         setTimeout(() => {
-              // Adicionar o elemento div à classe "container"
+              // Add div element to "container" class
             $(".container").append(resultContainer);
 
         }, 1000);
