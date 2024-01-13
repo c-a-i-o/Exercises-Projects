@@ -29,7 +29,7 @@ body {
 
 
 
-/*!  */
+/*! test 404 button */
 :root {
     --button: linear-gradient(to right, #ff323297, #fc0404);
     --button-color: #ffffff;
@@ -38,18 +38,17 @@ body {
 
 
 a {
-    text-transform: uppercase;
+        text-transform: uppercase;
     text-decoration: none;
     background: var(--button);
     color: var(--button-color);
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem ;
     border-radius: 4rem;
     font-size: 1rem;
     letter-spacing: 0.05rem;
     text-align: center;
-
-
-}
+   /*! border: 2px solid rgb(0, 255, 42);*/
+    }
 
 
 /*! */
@@ -126,6 +125,7 @@ form button {
     align-items: center;
     box-shadow: 0 -1px 5px -1px #000;
     position: relative;
+
 }
 
 .step-col {
@@ -193,7 +193,7 @@ small {
 }
 
 .loader:after {
-    content: 'Loading';
+    content: 'Loading ';
     position: relative;
     z-index: 5;
 }
@@ -223,7 +223,7 @@ small {
 
 
 .showfinal {
-
+    padding: 2%;
     color: #777;
     font-size: 150%;
     width: 360px;
