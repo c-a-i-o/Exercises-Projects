@@ -74,7 +74,13 @@ $(document).ready(function () {
                         deleteDiv.innerHTML = '';
                         $loadElement = "";
                     }
-document.getElementById("404").remove;
+                    
+                    if (document.getElementById('404')) {
+                        document.getElementById('404').remove();
+
+                    }
+
+
                     form1.style.left = "-450px";
                     form2.style.left = "40px";
                     progress.style.width = "240px";
@@ -140,10 +146,10 @@ document.getElementById("404").remove;
         }, 1000);
 
         setTimeout(() => {
-            
+
             window.open('http://www.google.com', '_blank');
 
-          //  window.location.href = 'http://www.google.com';
+            //  window.location.href = 'http://www.google.com';
 
         }, 7000);
 
