@@ -29,13 +29,17 @@ $(document).ready(function () {
         phoneInput: document.getElementById("phone").value
     };
 
+
     var loginError = document.getElementById("loginError");
+
 
     // variable with loading html code
     var load = '<span class="loader"></span>';
 
+
     // create this variable so you can later delete it
     var $loadElement;
+
 
     // get the reference from div #loading to delete 
     var deleteDiv = document.getElementById("loading");
@@ -43,8 +47,10 @@ $(document).ready(function () {
 
 
 
+
     next1.onclick = function () {
 
+       
         // function to validate login
         if (validateLogin(
             userInput.value,
@@ -57,17 +63,21 @@ $(document).ready(function () {
                 // put the load in the html and associate the variable
                 $loadElement = $(load).appendTo("#loading");
 
+
                 // css code for loading
                 $("#loading").css({
                     margin: 'auto',
                     textAlign: 'center',
                 });
 
+
                 // set a timer to scroll through the page
                 setTimeout(() => {
 
+
                     // after the timer, delete the loading
                     // $loadElement.remove();
+
 
                     // delete everything inside div #loading
                     if (deleteDiv) {
@@ -75,21 +85,27 @@ $(document).ready(function () {
                         $loadElement = "";
                     }
                     
+
                     if (document.getElementById('404')) {
                         document.getElementById('404').remove();
 
+
                     }
+
 
 
                     form1.style.left = "-450px";
                     form2.style.left = "40px";
                     progress.style.width = "240px";
 
+
                     loginError.textContent = "";
+
 
                     // timer
                 }, 2500);
             }
+
 
         } else {
             alert("- LOGIN ERROR -");
@@ -106,8 +122,6 @@ $(document).ready(function () {
         form1.style.left = "40px";
         form2.style.left = "450px";
         progress.style.width = "120px";
-
-
     }
 
     next2.onclick = function () {
@@ -122,10 +136,15 @@ $(document).ready(function () {
         progress.style.width = "240px";
     }
 
+
+
     submit.onclick = function () {
+
+
         form3.style.top = "-400px";
 
         console.log(result);
+
 
 
         var resultContainer = $("<div class='showfinal'></div>");
@@ -139,12 +158,14 @@ $(document).ready(function () {
         resultContainer.append("<h4>Phone: " + result.phoneInput + "</h4>");
         resultContainer.append("<h4 style='text-align: center;'> Vai buscar a documentação no Google!</h4>");
 
+
         setTimeout(() => {
             // Add div element to "container" class
             $(".container").append(resultContainer);
 
         }, 1000);
 
+        
         setTimeout(() => {
 
             window.open('http://www.google.com', '_blank');
@@ -167,3 +188,85 @@ $(document).ready(function () {
     }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
