@@ -13,12 +13,12 @@ $(document).ready(function () {
     var progress = document.getElementById("progress");
     var submit = document.getElementById("submit")
 
-    const user = "";
-    const pass = "";
+    var user = "";
+    var pass = "";
 
-    var userInput = document.getElementById("user");
-    var passwordInput = document.getElementById("password");
-    var confirmPassInput = document.getElementById("confirmpass");
+    const userInput = document.getElementById("user");
+    const passwordInput = document.getElementById("password");
+    const confirmPassInput = document.getElementById("confirmpass");
 
     var result = {
         instagramInput: document.getElementById("instagram").value,
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
     // variable with loading html code
-    var load = '<span class="loader"></span>';
+    const load = '<span class="loader"></span>';
 
 
     // create this variable so you can later delete it
