@@ -16,18 +16,11 @@ $(document).ready(function () {
     var user = "";
     var pass = "";
 
-    const userInput = document.getElementById("user");
-    const passwordInput = document.getElementById("password");
-    const confirmPassInput = document.getElementById("confirmpass");
+    var userInput = document.getElementById("user");
+    var passwordInput = document.getElementById("password");
+    var confirmPassInput = document.getElementById("confirmpass");
 
-    var result = {
-        instagramInput: document.getElementById("instagram").value,
-        githubInput: document.getElementById("github").value,
-        twitterInput: document.getElementById("twitter").value,
-        firstNameInput: document.getElementById("firstname").value,
-        lastNameInput: document.getElementById("lastname").value,
-        phoneInput: document.getElementById("phone").value
-    };
+ 
 
 
     var loginError = document.getElementById("loginError");
@@ -49,8 +42,8 @@ $(document).ready(function () {
 
 
     next1.onclick = function () {
+        //console.log(result);
 
-       
         // function to validate login
         if (validateLogin(
             userInput.value,
@@ -84,13 +77,11 @@ $(document).ready(function () {
                         deleteDiv.innerHTML = '';
                         $loadElement = "";
                     }
-                    
-
-                    if (document.getElementById('404')) {
-                        document.getElementById('404').remove();
 
 
-                    }
+                    //if (document.getElementById('404')) {
+                    //   document.getElementById('404').remove();
+                    //}
 
 
 
@@ -128,17 +119,29 @@ $(document).ready(function () {
         form2.style.left = "-450px";
         form3.style.left = "40px";
         progress.style.width = "360px";
+
+       // console.log(result);
+
     }
 
     back2.onclick = function () {
         form2.style.left = "40px";
         form3.style.left = "450px";
         progress.style.width = "240px";
-    }
+           }
 
 
 
     submit.onclick = function () {
+
+        var result = {
+            instagramInput: document.getElementById("instagram").value,
+            githubInput: document.getElementById("github").value,
+            twitterInput: document.getElementById("twitter").value,
+            firstNameInput: document.getElementById("firstname").value,
+            lastNameInput: document.getElementById("lastname").value,
+            phoneInput: document.getElementById("phone").value
+        };
 
 
         form3.style.top = "-400px";
@@ -165,7 +168,7 @@ $(document).ready(function () {
 
         }, 1000);
 
-        
+
         setTimeout(() => {
 
             window.open('http://www.google.com', '_blank');
